@@ -47,8 +47,9 @@ export const ContactSection: React.FC = () => {
     setLastSubmittedText(currentMsgText);
 
     try {
-      const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
-      const response = await fetch(`${baseUrl}/api/contact`, {
+      const baseUrl = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:5000';
+      const apiUrl = baseUrl ? `${baseUrl}/api/contact` : '/api/contact';
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
