@@ -1,5 +1,7 @@
 # Kushagra Tomar — Personal Developer Portfolio
 
+🚀 **Live Demo:** [https://portfoloio-pied.vercel.app](https://portfoloio-pied.vercel.app)
+
 An optimized, production-ready developer portfolio application featuring a dark brutalist 3D card deck engine interface, interactive terminal, Web Audio SFX synthesis, and an Express backend API.
 
 ## Architecture
@@ -40,3 +42,12 @@ npm run dev
   PORT=5000
   CORS_ORIGIN=http://localhost:5173
   ```
+
+## Deployment
+
+This project is deployed on **Vercel**:
+
+- **Frontend** — Vite static build served via Vercel CDN
+- **Backend API** — Express contact handler converted to Vercel Serverless Functions (`/api/contact`, `/api/health`)
+
+Live at: [https://portfoloio-pied.vercel.app](https://portfoloio-pied.vercel.app)
