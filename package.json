@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "cd frontend && npm install && cd ../backend && npm install",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd frontend && npm install && npm run build"
+  },
+  "dependencies": {
+    "@vercel/node": "^3.2.7",
+    "nodemailer": "^10.0.13"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^8.0.2",
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  }
+}
